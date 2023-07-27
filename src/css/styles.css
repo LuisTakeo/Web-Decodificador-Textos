@@ -30,36 +30,40 @@ h1, h2, h3, h4, h5, h6, p, input{
 .container{
     /* border: 2px solid blue; */
     display: flex;
+    gap: 1rem;
     min-height: 90vh;
     margin: 2.5rem auto;
     width: 95vw;
+
 }
 
 .codificador{
-    flex: 1;
     /* border: 2px solid green; */
     display: flex;
+    flex: 1;
     flex-direction: column;
 }
 .codificador__header{
+    /* border: 2px solid red; */
     flex: 0;
 }
 
 .codificador__form{
-    flex: 1;
+    /* border: 2px solid red; */
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
     margin: 5rem auto 0;
-    width: 42.5rem;
-    /* border: 2px solid red; */
+    max-width: 42.5rem;
+    width: 100%;
 }
 
 .codificador__text-area{
-    flex: 1 ;
     background-color: var(--light-blue-light-blue-100);
     border: none;
     color: var(--dark-blue-dark-blue-300, #0A3871);
+    flex: 1 ;
     font-size: 2rem;
     font-style: normal;
     font-weight: 400;
@@ -86,15 +90,16 @@ h1, h2, h3, h4, h5, h6, p, input{
 }
 .codificador__area__buttons{
     display: flex;
-    /* width: 42.5rem; */
+    width: 100%;
     align-items: flex-start;
     justify-content: center;
     gap: 1.5rem;
+    /* border: 2px solid red; */
 }
 .codificador__button{
-    flex: 1 0;
+    flex: 1 1;
     /* display: flex; */
-    /* width: 20.5rem; */
+    width: 100%;
     padding: 1.5rem .5rem;
     /* align-items: flex-start; */
     border-radius: 1.5rem;
@@ -164,4 +169,28 @@ h1, h2, h3, h4, h5, h6, p, input{
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 1.5rem */
+}
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+    .resposta{
+        width: 100%;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    .resposta__image{
+        display: none;
+    }
+    .codificador__form{
+        margin: 3.5rem auto 0;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .codificador__area__buttons{
+        flex-direction: column;
+    }
 }
