@@ -1,0 +1,19 @@
+.codificador__button{
+    flex: 1 1;
+    /* display: flex; */
+    width: 100%;
+    padding: 1.5rem .5rem;
+    /* align-items: flex-start; */
+    border-radius: 1.5rem;
+    background: var(--dark-blue-dark-blue-300);
+    color: var(--white);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.codificador__button--white{
+    border: 1px solid var(--dark-blue-dark-blue-300);
+    background: #D8DFE8;
+    color: var(--dark-blue-dark-blue-300);
+}

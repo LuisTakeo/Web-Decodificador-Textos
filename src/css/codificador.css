@@ -1,0 +1,6 @@
+.codificador{
+    /* border: 2px solid green; */
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}

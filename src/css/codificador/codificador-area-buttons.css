@@ -1,0 +1,26 @@
+
+.codificador__area{
+    /* border: 2px solid blue; */
+}
+.codificador__area__info{
+    color: var(--gray-gray-400);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.125rem */
+    margin-bottom: 1rem;
+}
+.codificador__area__buttons{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    /* border: 2px solid red; */
+}
+
+@media screen and (max-width: 425px){
+    .codificador__area__buttons{
+        flex-direction: column;
+    }
+}
